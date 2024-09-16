@@ -1,0 +1,16 @@
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+.angular/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Miscellaneous and system files
+.DS_Store
+Thumbs.db
