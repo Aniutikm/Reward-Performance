@@ -1,0 +1,30 @@
+
+<div class="sidebar">
+  <div class="profile">
+    <img src="assets/lady.jpg" alt="Anna Parker" class="profile-pic" />
+    <div class="profile-info">
+      <span class="profile-info_title">ANNA PARKER</span>
+      <span class="profile-info_subtitle">Senior Director, Total Rewards</span>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <div
+      *ngFor="let item of menuItems"
+      class="menu-card"
+      [ngClass]="{ 'menu-card-column': item.isColumn }"
+    >
+      <span class="h4">
+        {{ item.title }}
+      </span>
+      <div *ngIf="item.pointsNumber && item.pointsType" class="menu-card-points">
+        <span class="menu-card-points_number">{{ item.pointsNumber }}</span>
+        <span class="menu-card-points_type">{{ item.pointsType }}</span>
+      </div>
+      <div *ngIf="item.icon" class="menu-card-icon">
+        <i [class]="item.icon"></i>
+      </div>
+      <div *ngIf="item.isColumn" class="menu-card-space"></div>
+    </div>
+  </nav>
+</div>

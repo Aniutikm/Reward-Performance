@@ -1,0 +1,19 @@
+:host {
+font-family: "Montserrat", sans-serif;
+  padding: 30px 100px;
+  height: 100%;
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  app-sidebar {
+    flex: 0 0 250px;
+  }
+
+  app-main-content {
+    flex: 1;
+  }
+}

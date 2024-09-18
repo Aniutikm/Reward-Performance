@@ -1,0 +1,87 @@
+.sidebar {
+  width: 250px;
+
+  .profile {
+    display: flex;
+    background-color: var(--navy-grey);
+    padding: 10px;
+    gap: 10px;
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      color: var(--white);
+
+      &_title {
+        font-size: 18px;
+      }
+
+      &_subtitle {
+        font-size: 9px;
+        line-height: 9px;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+
+    .menu-card {
+      display: flex;
+      justify-content: space-between;
+      color: var(--white);
+      padding: 10px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/assets/smile.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .menu-card-points {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        font-weight: 100;
+
+        &_number {
+          font-size: 24px;
+        }
+
+        &_type {
+          font-size: 12px;
+        }
+      }
+
+      .menu-card-icon {
+        font-size: 46px;
+      }
+    }
+
+    .menu-card-column {
+      display: flex;
+      flex-direction: column;
+      color: var(--white);
+      padding: 10px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('/assets/smile.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .menu-card-space {
+        width: 100%;
+        border: 1px solid var(--white);
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 20px;
+      }
+    }
+  }
+}
